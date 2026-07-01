@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #fea928;
+  --color-hero: #9c9388e8;
+  --color-fondo: #d8c0a3e8;
+  --color-secondary: #ed8900;
+  --color-black: #090425;
+  --color-button: #150755e8;
+
+  --color-accent: #eb7b20da;
+/* Otros nombres comunes que puedes usar 🎨
+accent
+pink
+brand
+highlight
+soft
+muted
+danger
+info */
+}
+
+@variant dark (&:where(.dark, .dark *));
+/* container global */
+@utility container{
+  margin-inline: auto;
+  padding-inline: 1rem
+}
+/* container:{
+  center:true,
+  padding{
+    DEFAULT: "1rem",
+    sm:"1rem",
+  }
+} */
+ @utility container {
+  margin-inline: auto;
+  
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-inline: 3rem;
+    /* background-color: #090425; */
+  }
+}
+.font-handwriting {
+  font-family: "Dancing Script", cursive;
+}

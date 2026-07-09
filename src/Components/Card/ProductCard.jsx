@@ -64,8 +64,8 @@ const ProductCard = ({
             />
 
         </div>
-        <div className="p-2">
-        <div className="justify-items-center">
+        <div className="p-2 ">
+        <div className="justify-items-center ">
             <h2
                 className="
                 text-xl

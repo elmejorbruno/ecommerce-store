@@ -38,7 +38,7 @@ export const ProductsData = [
     },
     {
         id: 2,
-        title: "Blusa Casual",
+        title: "Blusa Casual y falda",
         category:"women",
         img:ModeloBlusaBlaca,
         rating:4.5,

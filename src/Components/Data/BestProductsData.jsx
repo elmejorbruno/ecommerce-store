@@ -11,6 +11,7 @@ export const bestProductsData = [
         img:Img1,
         title: "Women Ethnic",
         rating:5.0,
+        description:"chaqueta negra, elegante y moderna",
         color:"white",
         aosDelay: "0"
     },
@@ -19,6 +20,8 @@ export const bestProductsData = [
         img:Img2,
         title: "Women western",
         rating:4.5,
+        description:"chaqueta negra, elegante y moderna",
+
         color:"red",
         aosDelay: "0"
     },
@@ -27,6 +30,8 @@ export const bestProductsData = [
         img:Img3,
         title: "Goggles",
         rating:4.7,
+        description:"chaqueta negra mangas blancas, elegante y moderna",
+
         color:"brown",
         aosDelay: "400"
     },

@@ -6,8 +6,9 @@
   --color-fondo: #d8c0a3e8;
   --color-secondary: #ed8900;
   --color-black: #090425;
+  
+  --color-blue: #2f12afe8;
   --color-button: #150755e8;
-
   --color-accent: #eb7b20da;
 /* Otros nombres comunes que puedes usar 🎨
 accent
@@ -42,7 +43,7 @@ info */
 @media (min-width: 640px) {
   .container {
     padding-inline: 3rem;
-    /* background-color: #090425; */
+    /* background-color: #2f12afe8; */
   }
 }
 .font-handwriting {

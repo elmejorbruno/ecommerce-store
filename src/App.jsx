@@ -37,7 +37,7 @@ const App = () => {
 					<Route
 					path='/product/:id'
 					element={<ProductDetails/>} />
-					<Route path="notfound" element={<NotFound />} />
+					<Route path="*" element={<NotFound />} />
 				</Route>
 			</Routes>
 		</>

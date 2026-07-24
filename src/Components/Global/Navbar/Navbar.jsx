@@ -11,12 +11,12 @@ const Menu = [
 	},
 	{
 		id: 2,
-		name: 'Mujer',
+		name: 'Dama',
 		link: '/women',
 	},
 	{
 		id: 3,
-		name: 'Hombre',
+		name: 'Caballero',
 		link: '/men',
 	},
 	{

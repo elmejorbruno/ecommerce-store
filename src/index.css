@@ -10,6 +10,7 @@
   --color-blue: #2f12afe8;
   --color-button: #150755e8;
   --color-accent: #eb7b20da;
+  --color-fondo-beige: #c7b5a0;
 /* Otros nombres comunes que puedes usar 🎨
 accent
 pink
@@ -43,7 +44,7 @@ info */
 @media (min-width: 640px) {
   .container {
     padding-inline: 3rem;
-    /* background-color: #2f12afe8; */
+    /* background-color: #c7b5a0; */
   }
 }
 .font-handwriting {

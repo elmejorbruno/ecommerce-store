@@ -1,8 +1,13 @@
 import React from 'react'
+import CategoryHero from '../../Components/CategoryPages/CategoryHero'
+import { heroData } from '../../Components/Data/DataHero'
 
 const Kids = () => {
   return (
-    <div>Kids</div>
+    <article>
+      <CategoryHero
+      {...heroData.kids}/>
+    </article>
   )
 }
 

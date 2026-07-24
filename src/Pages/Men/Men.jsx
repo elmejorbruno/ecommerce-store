@@ -1,26 +1,17 @@
 import React from 'react'
-import { ProductsData } from '../../Components/Data/ProductsData'
-import ProductCard from '../../Components/Card/ProductCard';
+
+import CategoryHero from '../../Components/CategoryPages/CategoryHero';
+import { heroData } from '../../Components/Data/DataHero';
 
 const Men = () => {
-  const products = ProductsData.filter(
-    product => product.category === category
-  );
+ 
 
   return (
-    <div>
-      <ProductGrid
-        category="men"
-        title="Colección Masculina"
-        subtitle="Camisas, pantalones y prendas con estilo."
+    <article>
+      <CategoryHero
+       {...heroData.men}
       />
-
-      {products.map(product => (
-        <ProductCard
-          key={product.id}
-          {...product}/>
-      ))}
-    </div>
+    </article>
   )
 }
 

@@ -14,6 +14,7 @@ import NotFound from './Pages/NotFound';
 import Layout from './Layout/Layout';
 import ProductDetails from './Pages/ProductDetails';
 import ScrollToTop from './Components/Global/ScrollToTop';
+import CollectionPage from './Components/CategoryPages/CollectionsCategory/CollectionPage';
 
 const App = () => {
 	React.useEffect(() => {
@@ -31,7 +32,12 @@ const App = () => {
 			<Routes>
 				<Route element={<Layout />}>
 					<Route path="/" element={<Home />} />
-					<Route path="women" element={<Women />} />
+					<Route path="women" element={<Women />}/>
+					<Route
+						path="women/:collectionSlug"
+						element={<CollectionPage/>}
+					/>
+					
 					<Route path="men" element={<Men />} />
 					<Route path="kids" element={<Kids />} />
 					<Route

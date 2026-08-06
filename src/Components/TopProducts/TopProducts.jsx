@@ -5,7 +5,7 @@ import { FaStar } from 'react-icons/fa6'
 const TopProducts = () => {
   return (
     <div>
-        <div className="container">
+        <div className="container dark:bg-gray-950">
             {/* Header section */}
             <div className="text-left mb-20">
 					<p data-aos="fade-up" className="text-sm text-primary">Top</p>

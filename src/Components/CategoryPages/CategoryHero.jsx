@@ -12,13 +12,13 @@ const CategoryHero = ({  subtitle,
 
   return (
     <section
-      className="relative w-full overflow-hidden"
-      style={{ backgroundColor: "var(--color-fondo-beige)" }}
+      className="relative w-full overflow-hidden "
+      style={{ backgroundColor: "var(--color-fondo-beige)"  }}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 md:px-20 lg:px-40 py-16 md:py-30 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 md:px-20 lg:px-40 py-16 md:py-30 grid grid-cols-1 md:grid-cols-2 gap-10 items-center  ">
 
         {/* Texto */}
-        <div data-aos="fade-up" data-aos-duration="900" className="text-center md:text-left">
+        <div data-aos="fade-up" data-aos-duration="900" className="text-center md:text-left ">
           <h4
             className="uppercase tracking-widest text-xs sm:text-sm mb-2 sm:mb-3"
             style={{ color: "var(--color-secondary)" }}

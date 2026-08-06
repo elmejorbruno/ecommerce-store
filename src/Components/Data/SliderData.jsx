@@ -1,5 +1,5 @@
-import Imagen1 from "../../assets/img/bolsas-sin-transparente.png"
-import Imagen2 from "../../assets/img/modelo-masculino-forma-rectangular.png"
+import Imagen1 from "../../assets/img/bolsas-sin-transparente.webp"
+import Imagen2 from "../../assets/img/modelo-masculino-forma-rectangular.webp"
 import Imagen3 from "../../assets/img/imagen-nino-nina-fondo-piel2.png"
 
 

@@ -1,50 +1,51 @@
-
-export const dataProductKins = [
+import Img1 from '../../../assets/img/women/modelo-blusa-blanca.png'
+export const dataProductKids = [
      {
-              id: 1,
-              category: "women",
-              title: "Vestido elegante",
-              img:Img1,
+         id: 1,
+         category: "women",
+         title: "Vestido elegante",
+         img:Img1,
       
-              rating:5.0,
-              price:49.99,
+         rating:5.0,
+         price:49.99,
+            
+         oldPrice:69.99,
+         badge:"Nuevo",
+      
+         sizes:["S","M","L"],
               
-              oldPrice:69.99,
-              badge:"Nuevo",
+         colors:[
+            {  name: "Negro",
+               code: "#000000" 
       
-              sizes:["S","M","L"],
-              
-              colors:[
-               {  name: "Negro",
-                  code: "#000000" 
-      
-               },
-               { 
-                  name:"Gris",
-                  code:"#808080"
-               },
-              ],
-              description: 
-                  "Vestido elegante confeccionado con tela suave y ligera. Ideal para eventos, reuniones.",
-              stock:15,
-              sku:"WE-001",
-              aosDelay: "0"
+            },
+            { 
+               name:"Gris",
+               code:"#808080"
+            },
+         ],
+         description: 
+            "Vestido elegante confeccionado con tela suave y ligera. Ideal para eventos, reuniones.",
+         stock:15,
+         sku:"WE-001",
+         aosDelay: "0"
           },
           {
-              id: 2,
-              title: "Blusa Casual y falda",
-              category:"women",
-              img:ModeloBlusaBlaca,
-              rating:4.5,
-               price:49.99,
+            id: 2,
+            title: "Blusa Casual y falda",
+            category:"women",
+            img:Img1,
+            rating:4.5,
+            price:49.99,
       
-               oldPrice:69.99,
-              badge:"Nuevo", 
+            oldPrice:69.99,
+            badge:"Nuevo", 
       
-              sizes:["S","M"],
+            sizes:["S","M"],
               
-              colors:[
-               {  name: "Negro",
+            colors:[
+               {  
+                  name: "Negro",
                   code: "#000000" 
       
                },

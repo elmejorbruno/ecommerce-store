@@ -1,18 +1,24 @@
-import Img1 from "../../assets/img/women/vestido-elegante-gris.png"
-import ModeloBlusaBlaca from "../../assets/img/women/modelo-blusa-blanca.png"
-import ModeloTrajeCompletoBlanco from "../../assets/img/women/modelo-blusa-blanca-pantalo-blanco.png"
-import VestidoNocheCrema from "../../assets/img/women/vestido-noche-elegante-crema.png"
-import VestidoNocheDorado from "../../assets/img/women/vestido-noche-elegante-dorado.png"
-import VestidoNocheNegro from "../../assets/img/women/vestido-noche-elegante-negro.png"
-import BlusaTirasBlanca from "../../assets/img/women/blusa-tiras-blanca.png"
-import BlusaTirasCrema from "../../assets/img/women/blusa-tiras-crema.png"
-import BlusaTirasNegro from "../../assets/img/women/blusa-tiras-negra.png"
-import PantalónAltoBeize from "../../assets/img/women/pantalón-vestir-dama-alto-beize.png"
-import PantalónAltoBlanco from "../../assets/img/women/pantalón-vestir-dama-alto-blanco.png"
-import PantalónAltoNegro from "../../assets/img/women/pantalón-vestir-dama-alto-negro.png"
-import BlazerEleganteBlanco from "../../assets/img/women/blazer-elegante-blanco.png"
-import BlazerEleganteCrema from "../../assets/img/women/blazer-elegante-crema.png"
-import BlazerEleganteNegro from "../../assets/img/women/blazer-elegante-negro.png"
+import Img1 from "../../../assets/img/women/vestido-elegante-gris.webp"
+import ModeloBlusaBlaca from "../../../assets/img/women/modelo-blusa-blanca.webp"
+import ModeloTrajeCompletoBlanco from "../../../assets/img/women/modelo-blusa-blanca-pantalo-blanco.webp"
+import VestidoNocheCrema from "../../../assets/img/women/vestido-noche-elegante-crema.webp"
+import VestidoNocheDorado from "../../../assets/img/women/vestido-noche-elegante-dorado.webp"
+import VestidoNocheNegro from "../../../assets/img/women/vestido-noche-elegante-negro.webp"
+import VestidoFiestaGrid from "../../../assets/img/women/vestido-elegante-gris.webp"
+import VestidoFiestaNegro from "../../../assets/img/women/vestido-elegante-negro.webp"
+import BlusaTirasBlanca from "../../../assets/img/women/blusa-tiras-blanca.png"
+import BlusaTirasCrema from "../../../assets/img/women/blusa-tiras-crema.webp"
+import BlusaTirasNegro from "../../../assets/img/women/blusa-tiras-negra.webp"
+import PantalónAltoBeize from "../../../assets/img/women/pantalón-vestir-dama-alto-beize.webp"
+import PantalónAltoBlanco from "../../../assets/img/women/pantalón-vestir-dama-alto-blanco.webp"
+import PantalónAltoNegro from "../../../assets/img/women/pantalón-vestir-dama-alto-negro.webp"
+import BlazerEleganteBlanco from "../../../assets/img/women/blazer-elegante-blanco.webp"
+import BlazerEleganteCrema from "../../../assets/img/women/blazer-elegante-crema.webp"
+import BlazerEleganteNegro from "../../../assets/img/women/blazer-elegante-negro.webp"
+import CamisaEjecutivaBlanca from "../../../assets/img/women/blusa-blanca-fondo-beige.webp"
+import CamisaEjecutivaNegra from "../../../assets/img/women/blusa-negra-fondo-beige.webp"
+import FaldaEjecutivaBeige from "../../../assets/img/women/falda-beige-fondo-baige.webp"
+
 
 export const dataProductWomen = [
    
@@ -31,7 +37,7 @@ export const dataProductWomen = [
              {
                color: "Crema",
                image: BlusaTirasCrema,
-               code:"#f0efe7",
+               code:"#c5c19f",
 
             },
 
@@ -82,7 +88,7 @@ export const dataProductWomen = [
             }
         ],
         category:"women",
-         collection: "executive-sets",
+       collection: "executive-sets",
         type: "single",
         rating:4.5,
         price:39.99,
@@ -99,7 +105,7 @@ export const dataProductWomen = [
        
         {
         id: 3,
-        title: "Blazer Elegante Blanco",
+        title: "Blazer Elegante",
          variants: [
             {
                color: "Blanco",
@@ -110,7 +116,7 @@ export const dataProductWomen = [
              {
                color: "Crema",
                image: BlazerEleganteCrema,
-               code:"#f0efe7",
+               code:"#cac6a4",
             },
 
              {
@@ -133,8 +139,138 @@ export const dataProductWomen = [
         stock:15,
         sku:"WE-001",
         aosDelay: "0"
-      },   
-    
-      
+      },  
+        {
+        id: 4,
+        title: "Vestido de fiesta elegante",
+         variants: [
+           
+           
+             {
+               color: "Negro",
+               code:"#000000",
+               image: VestidoFiestaNegro,
+            }, 
+             {
+               color: "Gris",
+               image: VestidoFiestaGrid,
+               code:"#ccc7cf",
+            },
+
+        ],
+        category:"women",
+         collection: "evening-party-dresses",
+        type: "single",
+        rating:4.5,
+        price:49.99,
+        oldPrice:59.99,
+        badge:"Nuevo", 
+        sizes:["S","M"],
+       
+        description: 
+              "Blazer estructurado de lino premium con acabado natural y costuras visibles. Presenta solapas clásicas, cierre frontal con botón único y hombros definidos que realzan la silueta. Perfecto para elevar cualquier conjunto con un aire profesional y elegante.",
+        stock:15,
+        sku:"WE-001",
+        aosDelay: "0"
+      },    
+     {
+        id: 5,
+        title: "Vestido de noche",
+         variants: [
+           
+           
+             {
+               color: "Dorado",
+               code:"#bb8116",
+               image: VestidoNocheDorado,
+            }, 
+             {
+               color: "Crema",
+               image: VestidoNocheCrema,
+               code:"#c5c19f",
+            },
+              {
+               color: "Negro",
+               image: VestidoNocheNegro,
+               code:"#000",
+            },
+
+        ],
+        category:"women",
+         collection: "evening-dresses",
+        type: "single",
+        rating:4.5,
+        price:49.99,
+        oldPrice:59.99,
+        badge:"Nuevo", 
+        sizes:["S","M"],
+       
+        description: 
+              "Blazer estructurado de lino premium con acabado natural y costuras visibles. Presenta solapas clásicas, cierre frontal con botón único y hombros definidos que realzan la silueta. Perfecto para elevar cualquier conjunto con un aire profesional y elegante.",
+        stock:15,
+        sku:"WE-001",
+        aosDelay: "0"
+      },    
+        {
+        id: 6,
+        title: "Camisa ejecutiva",
+         variants: [
+           
+             {
+               color: "Gris",
+               image: CamisaEjecutivaBlanca,
+               code:"#fff",
+            },
+
+             {
+               color: "Negro",
+               code:"#000000",
+               image: CamisaEjecutivaNegra,
+            }
+        ],
+        category:"women",
+         collection: "traje-ejecutivo",
+        type: "single",
+        rating:4.5,
+        price:49.99,
+        oldPrice:59.99,
+        badge:"Nuevo", 
+        sizes:["S","M"],
+       
+        description: 
+              "Blazer estructurado de lino premium con acabado natural y costuras visibles. Presenta solapas clásicas, cierre frontal con botón único y hombros definidos que realzan la silueta. Perfecto para elevar cualquier conjunto con un aire profesional y elegante.",
+        stock:15,
+        sku:"WE-001",
+        aosDelay: "0"
+      }, 
+
+       {
+        id: 7,
+        title: "Falda ejecutiva",
+         variants: [
+           
+             {
+               color: "Beize",
+               image: FaldaEjecutivaBeige,
+               code:"#ddd0c1",
+            },
+
+           
+        ],
+        category:"women",
+        collection: "traje-ejecutivo",
+        type: "single",
+        rating:4.5,
+        price:49.99,
+        oldPrice:59.99,
+        badge:"Nuevo", 
+        sizes:["S","M"],
+       
+        description: 
+              "Blazer estructurado de lino premium con acabado natural y costuras visibles. Presenta solapas clásicas, cierre frontal con botón único y hombros definidos que realzan la silueta. Perfecto para elevar cualquier conjunto con un aire profesional y elegante.",
+        stock:15,
+        sku:"WE-001",
+        aosDelay: "0"
+      }, 
   
 ]

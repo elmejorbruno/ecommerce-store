@@ -1,6 +1,6 @@
-import ImagenHero from '../../assets/img/women/modelo-hero-women.png'
+import ImagenHero from '../../assets/img/women/modelo-hero-women.webp'
 import ImagenMen from '../../assets/img/men/modelo-hero-men.png'
-import ImagenNinoNina from '../../assets/img/imagen-nino-nina.png'
+import ImagenNinoNina from '../../assets/img/kids/modelos-ninos-hero2.png'
 
 
 export const heroData = {

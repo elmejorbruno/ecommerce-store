@@ -1,8 +1,8 @@
-import Img1 from "../../assets/img/chaquetas-femenina-negra.png"
-import Img2 from "../../assets/img/chaquetas-femenina-negra-botones-dorados.png"
-import Img3 from "../../assets/img/chaquetas-femenina-gris-mangas-blancas.png"
-import Img4 from "../../assets/img/chaquetas-femenina-gris-bleizer.png"
-import Img5 from "../../assets/img/chaquetas-femenina-biege.png"
+import Img1 from "../../assets/img/women/chaquetas-femenina-negra.webp"
+import Img2 from "../../assets/img/women/chaquetas-femenina-negra-botones-dorados.webp"
+import Img3 from "../../assets/img/women/chaquetas-femenina-gris-mangas-blancas.webp"
+import Img4 from "../../assets/img/women/chaquetas-femenina-gris-bleizer.webp"
+import Img5 from "../../assets/img/women/chaquetas-femenina-biege.webp"
 import { FaStar } from "react-icons/fa6"
 
 export const bestProductsData = [

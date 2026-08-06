@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Hero from '../../Components/HomeSection/Hero/Hero';
-import Products from '../../Components/HomeSection/FeaturedProducts';
+import FeaturedProducts from '../../Components/HomeSection/FeaturedProducts';
 import TopProducts from '../../Components/TopProducts/TopProducts';
 import { Banner } from '../../Components/HomeSection/Banner/Banner';
 import Categoria from '../../Components/HomeSection/Categoria/Categoria';
@@ -12,7 +12,7 @@ const Home = () => {
 		<>
 			<Hero />
 			<Categoria />
-			<Products />
+			<FeaturedProducts />
 			<TopProducts />
 			<Banner/>
 		</>

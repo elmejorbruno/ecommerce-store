@@ -1,18 +1,16 @@
-import React from 'react'
-import { ProductsData } from '../Components/Data/ProductsData';
+import React, { useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { FaStar } from 'react-icons/fa6';
+import { allDataProduct } from '../Components/Data/ProductsData/AllDataProducts';
 
 const ProductDetails = () => {
-
-  const { id } = useParams();
-
+    const { id } = useParams();
+    
   
-
-  const product = ProductsData.find(
+    const product = allDataProduct.find(
         item => item.id === Number(id)
-    );
-
+    )
+    
     if (!product) {
 
          return (
@@ -22,8 +20,11 @@ const ProductDetails = () => {
 
             </div>
         );
-
+        
     }
+      const [selectedVariant, setSelectedVariant] = useState(
+        product.variants[0]
+    );
 
   return (
     <section className="py-40 bg-white dark:bg-slate-950">
@@ -31,36 +32,19 @@ const ProductDetails = () => {
     <div className="container">
 
         <div
-            className="
-            grid
-            grid-cols-1
-            lg:grid-cols-2
-            gap-14
-            items-start"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start"
         >
 
+           
             {/* Imagen */}
-
             <div
-                className="
-                bg-gray-100
-                dark:bg-slate-900
-                rounded-3xl
-                p-8
-                flex
-                justify-center
-                items-center"
+                className="bg-gray-100 dark:bg-slate-900 rounded-3xl p-8 flex justify-center items-center"
             >
 
                 <img
-                    src={product.img}
+                    src={selectedVariant.image}
                     alt={product.title}
-                    className="
-                    w-full
-                    max-w-md
-                    object-contain
-                    duration-300
-                    hover:scale-105"
+                    className="w-full max-w-md object-contain duration-300 hover:scale-105"
                 />
 
             </div>
@@ -74,11 +58,7 @@ const ProductDetails = () => {
               <div className="space-y-5">
 
                 <h1
-                    className="
-                    text-4xl
-                    font-bold
-                    text-gray-900
-                    dark:text-white"
+                    className="text-4xl font-bold text-gray-900 dark:text-white"
                 >
                     {product.title}
                 </h1>
@@ -98,10 +78,7 @@ const ProductDetails = () => {
                 <div className="flex items-center gap-4">
 
                     <span
-                        className="
-                        text-4xl
-                        font-bold
-                        text-button"
+                        className="text-4xl font-bold text-button"
                     >
                         ${product.price}
                     </span>
@@ -109,10 +86,7 @@ const ProductDetails = () => {
                     {product.oldPrice && (
 
                         <span
-                            className="
-                            text-xl
-                            text-gray-400
-                            line-through"
+                            className="text-xl text-gray-400 line-through"
                         >
                             ${product.oldPrice}
                         </span>
@@ -139,34 +113,24 @@ const ProductDetails = () => {
 
                 </div>
 
-          
-
             <div>
               <h3 className="font-semibold mb-3">
                   Colores
               </h3>
 
               <div className="flex gap-4">
-                  {product.colors?.map((color)=>(
-                      <span
-                          key={color.name}
-
-                          className="
-                          w-10
-                          h-10
-                          rounded-full
-                          border-2
-                          border-gray-300
-                          cursor-pointer
-                          hover:scale-110
-                          duration-300"
+                  {product.variants?.map((variant)=>(
+                      <button
+                          key={variant.color}
+                          onClick={() => setSelectedVariant(variant)}
+                          className="w-10 h-10 rounded-full border-2 border-gray-300 cursor-pointer hover:scale-110 duration-300"
 
                           style={{
 
-                              backgroundColor:color.code
+                              backgroundColor:variant.code
 
                           }}
-                          title={color.name}
+                          title={variant.color}
                       />
 
                   ))}

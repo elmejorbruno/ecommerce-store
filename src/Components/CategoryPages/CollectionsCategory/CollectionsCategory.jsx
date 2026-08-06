@@ -4,18 +4,19 @@ import CollectionsCard from './CollectionsCard'
 const CollectionsCategory = ({title, collections = []}) => {
   return (
     <section
-        className='mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8'
-        aria-labelledby='collections-heading'>
+        className='mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 lg:px-8 text-gray-900'
+        aria-labelledby='collections-heading '>
             {title && (
                 <h2 
                 id="collections-heading"
-                className='mb-8 text-3xl font-semibold text-gray-900'>
+                className='mb-8 text-2xl sm:text-3xl font-semibold text-gray-900 dark:text-white'>
                     {title}
                   
                 </h2>
             )}
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2
-                lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-3
+                sm:gap-8
+                    lg:grid-cols-5">
                 
                 {collections.map((collection) => (
                     <CollectionsCard

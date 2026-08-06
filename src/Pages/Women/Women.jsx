@@ -6,6 +6,8 @@ import SortBar from '../../Components/CategoryPages/SortBar'
 import ProductGrid from '../../Components/CategoryPages/ProductGrid'
 import CategoryHero from '../../Components/CategoryPages/CategoryHero'
 import { heroData } from '../../Components/Data/DataHero'
+import CollectionsCategory from '../../Components/CategoryPages/CollectionsCategory/CollectionsCategory'
+import { womenCollections } from '../../Components/Data/collectionsData/WomenCollectionsData'
 
 const Women = () => {
   const [sortState, setSortState] = useState({ sort: "relevance", perPage: 12, view: "grid"});
@@ -16,13 +18,18 @@ const Women = () => {
   };
 
   return (
-    <article>
+    <article className='dark:bg-gray-950'>
  
      <CategoryHero 
      {...heroData.women}
       />
-    <div className='container flex flex-col md:flex-row gap-18'>
+    <div className='container flex flex-col md:flex-row gap-18 '>
+         <CollectionsCategory
+            title="Colección"
+           collections={womenCollections}
+        />
          <div className="">
+
      {/* <Breadcrumb
         items={[
           { label: "Inicio", href: "/" },
@@ -39,11 +46,7 @@ const Women = () => {
         setSortState((s) => ({ ...s, [type]: value}))
       }
       /> */}
-      <ProductGrid
-    
-        view={sortState.view}
-        perPage={sortState.perPage}
-      />
+     
     </div>
     </article>
    

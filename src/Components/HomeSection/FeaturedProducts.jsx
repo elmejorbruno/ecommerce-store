@@ -1,12 +1,12 @@
 import React from 'react';
-import { ProductsData } from '../Data/ProductsData';
 import { FaStar } from 'react-icons/fa6';
 import ProductCard from '../Card/ProductCard';
+import { womenCollections } from '../Data/collectionsData/WomenCollectionsData';
 
 const FeaturedProducts = () => {
 	// Mostrar algunos productos destacados en la página principal.
 	return (
-		<div className="mt-14 mb-12">
+		<div className="mt-14 mb-12 dark:bg-gray-950">
 			<div className="container">
 				{/* Header section */}
 
@@ -25,9 +25,9 @@ const FeaturedProducts = () => {
 				</div>
 				{/* Body section */}
 				<div className="">
-					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 place-items-center  ">
+					<div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 place-items-center  ">
 						{/* card srction */}
-					{ProductsData.slice(0, 5).map((product) => (
+					{womenCollections.slice(0, 5).map((product) => (
 						<ProductCard
 						key={product.id}
 						{...product}

@@ -37,9 +37,18 @@ const App = () => {
 						path="women/:collectionSlug"
 						element={<CollectionPage/>}
 					/>
-					
+					 {/* KIDS */}
 					<Route path="men" element={<Men />} />
-					<Route path="kids" element={<Kids />} />
+					 <Route
+						path="men/:collectionSlug"
+						element={<CollectionPage />}
+						/>
+					 {/* KIDS */}
+					<Route path="kids" element={<Kids/>} />
+					 <Route
+						path="kids/:collectionSlug"
+						element={<CollectionPage />}
+					/>
 					<Route
 					path='/product/:id'
 					element={<ProductDetails/>} />

@@ -1,24 +1,25 @@
-import React from 'react'
+
 import { useParams } from 'react-router-dom'
-import { womenCollections } from '../../Data/collectionsData/WomenCollectionsData';
-import { dataProductWomen } from '../../Data/ProductsData/DataProductWomen';
 import ProductGrid from '../ProductGrid';
+
+import { allDataProduct } from '../../Data/ProductsData/AllDataProducts';
+import { allCollectionsData } from '../../Data/collectionsData/AllCollectionsData';
 
 const CollectionPage = () => {
     const { collectionSlug } = useParams();
 
     //Busca la coleccion
-    const collection = womenCollections.find(
+    const collection = allCollectionsData.find(
         (item) => item.slug === collectionSlug
     );
 
     //Buscar los productos de esa coleccion
-    const products = dataProductWomen.filter(
-        (item) => item.collection === collectionSlug
+    const products = allDataProduct.filter(
+        (item) => 
+          item.category === collection?.category &&
+          item.collection === collectionSlug
     );
-console.log('collectionSlug:', collectionSlug);
-console.log('products:', products);
-console.log('cantidad:', products.length);
+
   // Colección inexistente
     if (!collection) {
       

@@ -1,7 +1,10 @@
 import { IoMdSearch } from 'react-icons/io';
 import ShopBag from '../../../assets/icon/bag-blue-circulo-yellow.svg';
-import { FaCaretDown, FaCartShopping } from 'react-icons/fa6';
+import {  FaBars, FaCaretDown, FaCartShopping } from 'react-icons/fa6';
 import DarkMode from '../../DarkMode';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { FaTimes } from 'react-icons/fa';
 
 const Menu = [
 	{
@@ -44,33 +47,33 @@ const DropdownLinks = [
 ];
 
 const Navbar = () => {
+	const [openMenu, setOpenMenu] = useState(false);
+	const [openDropdown, setOpenDropdown] = useState(false);
+
 	return (
 		// <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200
-		<div
-			className="absolute
-    top-0
-    left-0
-    w-full
-    z-50
-    text-gray-900
-    dark:text-white
-    duration-200"
-		>
+		<header className='absolute top-0
+			left-0 w-full z-50 text-gray-900 dark:text-white duration-200'>
+
+		 {/* TOP NAVBAR */}
+
 			{/* upper Navbar */}
 			{/* <div className="bg-accent/90  py-3"> */}
 			<div className=" py-3">
 				<div className="container flex justify-between items-center">
+					 {/* LOGO */}
 					<div className="">
-						<a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
+						<Link to="/" className="font-bold text-2xl sm:text-3xl flex gap-2">
 							<img src={ShopBag} alt="Logo" className="w-10 " />
 							Elegance
-						</a>
+						</Link>
 					</div>
-					{/* search bar */}
+					{/* search bar  + BUTTON + DARKMODE */}
 					<div
 						className="flex justify-between items-center
                 gap-5"
-					>
+					>  
+					{/* SEARCH */}
 						<div
 							className="relative group hidden
                     sm:block"
@@ -99,56 +102,63 @@ const Navbar = () => {
 						>
 							<span
 								className="group-hover:block
-                    hidden transition-all duration-200 
-                    "
+                    			hidden transition-all duration-200 "
 							>
 								Order
 							</span>
 							<FaCartShopping
 								className="text-xl
-                    text-white drop-shadow-sm
-                    cursor-pointer"
+								text-white drop-shadow-sm
+								cursor-pointer"
 							/>
 						</button>
+
 						{/* Darkmode Switch */}
-						<div className="">
+						
 							<DarkMode />
-						</div>
+						
+            			{/* HAMBURGER MOBILE */}
+						<button 
+						className="sm:hidden text-2xl" 
+						onClick={() => setOpenMenu(true)}>
+							<FaBars/>
+						</button>
 					</div>
 				</div>
 			</div>
-			{/* lower Navbar */}
+
+      		{/* DESKTOP MENU */}
 
 			<div className="flex justify-center items-center">
-				<ul className="sm:flex hidden  items-center gap-4 py-3">
+				<ul className="sm:flex hidden items-center gap-4 py-3">
 					{Menu.map((data) => (
 						<li key={data.id} className="">
-							<a
-								href={data.link}
-								className="inline-block px-4  hover:text-primary transition-all duration-200"
+							<Link
+								to={data.link}
+								className="inline-block px-4 hover:text-primary transition-all duration-200"
 							>
 								{data.name}
-							</a>
+							</Link>
 						</li>
 					))}
-					{/* Simple dropdown  */}
+					{/* DROPDOWN DESKTOP */}
 					<li className="group relative cursor-pointer">
-						<a href="#" className="flex items-center fap-[2px] py-2">
+						<Link to="#" className="flex items-center gap-[2px] py-2">
 							En circulacion
 							<span>
 								<FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
 							</span>
-						</a>
+						</Link>
 						<div className="absolute z-[999] hidden group-hover:block w-[250px] rounded-md bg-white dark:bg-gray-900 shadow-md ">
 							<ul className="absolute bg-white dark:bg-gray-900 shadow-md rounded-md py-2 px-4 mt-2">
 								{DropdownLinks.map((data) => (
 									<li key={data.id} className="">
-										<a
-											href={data.link}
+										<Link
+											to={data.link}
 											className="inline-block w-full rounded-md p-2 hover:bg-gray-200 dark:hover:bg-gray-700 "
 										>
 											{data.name}
-										</a>
+										</Link>
 									</li>
 								))}
 							</ul>
@@ -156,7 +166,76 @@ const Navbar = () => {
 					</li>
 				</ul>
 			</div>
-		</div>
+			 {/* MOBILE MENU OVERLAY */}
+			
+			{openMenu && (
+				<div
+				className="fixed inset-0 bg-black/40 backdrop-blur-sm sm:hidden"
+				onClick={() => setOpenMenu(false)}
+				></div>
+			)}
+
+			{/* MOBILE MENU SIDEBAR */}
+			<div
+				className={`fixed top-0 left-0 h-full w-[260px] bg-white dark:bg-gray-900 shadow-lg p-5 sm:hidden transition-transform duration-300 ${
+				openMenu ? 'translate-x-0' : '-translate-x-full'
+				}`}
+			>
+				{/* CLOSE BUTTON */}
+				<button
+				className="text-2xl mb-5"
+				onClick={() => setOpenMenu(false)}
+				>
+				<FaTimes/>
+				</button>
+
+				{/* MOBILE LINKS */}
+				<ul className="flex flex-col gap-4">
+				{Menu.map((data) => (
+					<li key={data.id}>
+					<Link
+						to={data.link}
+						onClick={() => setOpenMenu(false)}
+						className="block py-2 text-lg hover:text-primary"
+					>
+						{data.name}
+					</Link>
+					</li>
+				))}
+
+				{/* DROPDOWN MOBILE */}
+				<li>
+					<button
+					className="flex items-center justify-between w-full py-2 text-lg"
+					onClick={() => setOpenDropdown(!openDropdown)}
+					>
+					En circulación
+					<FaCaretDown
+						className={`transition-transform ${
+						openDropdown ? 'rotate-180' : ''
+						}`}
+					/>
+					</button>
+
+					{openDropdown && (
+					<ul className="pl-4 flex flex-col gap-2">
+						{DropdownLinks.map((data) => (
+						<li key={data.id}>
+							<Link
+							to={data.link}
+							onClick={() => setOpenMenu(false)}
+							className="block py-2 hover:text-primary"
+							>
+							{data.name}
+							</Link>
+						</li>
+						))}
+					</ul>
+					)}
+				</li>
+				</ul>
+			</div>
+		</header>
 	);
 };
 

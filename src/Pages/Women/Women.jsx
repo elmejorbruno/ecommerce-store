@@ -7,7 +7,7 @@ import ProductGrid from '../../Components/CategoryPages/ProductGrid'
 import CategoryHero from '../../Components/CategoryPages/CategoryHero'
 import { heroData } from '../../Components/Data/DataHero'
 import CollectionsCategory from '../../Components/CategoryPages/CollectionsCategory/CollectionsCategory'
-import { womenCollections } from '../../Components/Data/collectionsData/WomenCollectionsData'
+import { dataWomenCollections } from '../../Components/Data/collectionsData/WomenCollectionsData'
 
 const Women = () => {
   const [sortState, setSortState] = useState({ sort: "relevance", perPage: 12, view: "grid"});
@@ -26,7 +26,7 @@ const Women = () => {
     <div className='container flex flex-col md:flex-row gap-18 '>
          <CollectionsCategory
             title="Colección"
-           collections={womenCollections}
+           collections={dataWomenCollections}
         />
          <div className="">
 

@@ -4,7 +4,7 @@ import VestidoEleganteGris from "../../../assets/img/women/vestido-elegante-gris
 import TrajeElegante from "../../../assets/img/women/modelo-blusa-blanca.webp"
 import ModeloDosPiezaCamisaMinifalda from "../../../assets/img/women/img-4.4.webp"
 
-export const womenCollections = [
+export const dataWomenCollections = [
  {
     id: 1,
     title: "Traje de oficina completo",

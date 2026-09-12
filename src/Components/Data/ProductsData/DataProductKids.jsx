@@ -1,64 +1,277 @@
-import Img1 from '../../../assets/img/women/modelo-blusa-blanca.png'
+import SoftTaupe from '../../../assets/img/kids/softtaupe.webp'
+import CamisaInfantilRosa from '../../../assets/img/kids/camisa-nina-rosa.png'
+import CamisaInfantilBeige from '../../../assets/img/kids/camisa-nuna-beige-arena.png'
+import CamisaInfantilMarfil from '../../../assets/img/kids/camisa-nuna-beige-marfil.png'
+import PantalonMinimalRosa from '../../../assets/img/kids/pants-dustypink.png'
+import PantalonMinimalMarfil from '../../../assets/img/kids/pants-infantil-ivory.png'
+import PantalonMinimalBeige from '../../../assets/img/kids/pants_beigesand.png'
+import ZapatitosBeige from '../../../assets/img/kids/shoes-beigesand.png'
+import ZapatitosRosa from '../../../assets/img/kids/shoes-dustypink.png'
+import ZapatitosMarfil from '../../../assets/img/kids/shoes_ivory.png'
+
 export const dataProductKids = [
-     {
-         id: 1,
-         category: "women",
-         title: "Vestido elegante",
-         img:Img1,
-      
-         rating:5.0,
-         price:49.99,
-            
-         oldPrice:69.99,
-         badge:"Nuevo",
-      
-         sizes:["S","M","L"],
-              
-         colors:[
-            {  name: "Negro",
-               code: "#000000" 
-      
-            },
-            { 
-               name:"Gris",
-               code:"#808080"
-            },
-         ],
-         description: 
-            "Vestido elegante confeccionado con tela suave y ligera. Ideal para eventos, reuniones.",
-         stock:15,
-         sku:"WE-001",
-         aosDelay: "0"
-          },
-          {
-            id: 2,
-            title: "Blusa Casual y falda",
-            category:"women",
-            img:Img1,
-            rating:4.5,
-            price:49.99,
-      
-            oldPrice:69.99,
-            badge:"Nuevo", 
-      
-            sizes:["S","M"],
-              
-            colors:[
-               {  
-                  name: "Negro",
-                  code: "#000000" 
-      
-               },
-               { 
-                  name:"Blanco",
-                  code:"#f1f1f1"
-               },
-              ],
-              description: 
-                  "Blusa elegante, ligera. Ideal para eventos, reuniones o una salida casual.",
-              stock:15,
-              sku:"WE-001",
-              
-              aosDelay: "0"
-          },
+      {
+    id: 1,
+    title: "Blazer Beige",
+    category: "kids",
+    gender: "boys",
+    collection: "classic-beige",
+
+    // slug: "blazer-beige",
+
+
+    variants: [
+      {
+        color: "Beige",
+        image: SoftTaupe ,
+        code: "#C7B49D"
+      }
+    ],
+
+    rating: 5.0,
+    price: 59.99,
+    oldPrice: 79.99,
+    badge: "Nuevo",
+
+    sizes: ["4Y", "6Y", "8Y", "10Y", "12Y"],
+
+    description:
+      "Blazer infantil de corte elegante confeccionado en un tejido ligero y cómodo. Una prenda sofisticada para ocasiones especiales.",
+
+    stock: 15,
+    sku: "KID-BOY-BLZ-001",
+    aosDelay: "0"
+  },
+
+  {
+    id: 2,
+    title: "Camisa Ivory",
+    category: "kids",
+    gender: "boys",
+
+    collection: "classic-beige",
+
+    // slug: "camisa-ivory",
+
+
+    variants: [
+      {
+        color: "Ivory",
+        image: SoftTaupe ,
+        code: "#F3F0E8"
+      }
+    ],
+
+    rating: 5.0,
+    price: 34.99,
+    oldPrice: 44.99,
+    badge: "Nuevo",
+
+    sizes: ["4Y", "6Y", "8Y", "10Y", "12Y"],
+
+    description:
+      "Camisa infantil de manga larga en tono ivory, diseñada para combinar con conjuntos elegantes y ocasiones especiales.",
+
+    stock: 20,
+    sku: "KID-BOY-SHR-001",
+    aosDelay: "100"
+  },
+
+  {
+    id: 3,
+    title: "Pantalón Beige",
+    category: "kids",
+    gender: "boys",
+
+    collection: "classic-beige",
+
+    // slug: "pantalon-beige",
+
+
+    variants: [
+      {
+        color: "Beige",
+        image: SoftTaupe ,
+        code: "#B5A58D"
+      }
+    ],
+
+    rating: 5.0,
+    price: 44.99,
+    oldPrice: 59.99,
+    badge: "Nuevo",
+
+    sizes: ["4Y", "6Y", "8Y", "10Y", "12Y"],
+
+    description:
+      "Pantalón infantil de corte elegante en tono beige, pensado para combinar con camisas y blazers de la colección.",
+
+    stock: 15,
+    sku: "KID-BOY-PNT-001",
+    aosDelay: "200"
+  },
+
+  {
+    id: 4,
+    title: "Mocasines Marrón",
+    category: "kids",
+    gender: "boys",
+
+    collection: "classic-beige",
+
+    // slug: "mocasines-marron",
+
+
+    variants: [
+      {
+        color: "Marrón",
+        image: SoftTaupe ,
+        code: "#6B5544"
+      }
+    ],
+
+    rating: 5.0,
+    price: 49.99,
+    oldPrice: 64.99,
+    badge: "Nuevo",
+
+    sizes: ["28", "29", "30", "31", "32", "33"],
+
+    description:
+      "Mocasines infantiles de estilo clásico en tono marrón, pensados para completar conjuntos elegantes.",
+
+    stock: 10,
+    sku: "KID-BOY-SHO-001",
+    aosDelay: "300"
+  },
+  {
+    id: 5,
+    title: "Camisa minimalista",
+    category: "kids",
+    gender: "boys",
+
+    collection: "dulce-melodia",
+
+    // slug: "dulce-melodia",
+
+
+    variants: [
+       {
+        color: "Marfil",
+        image: CamisaInfantilMarfil,
+        code: "#f7f2ea"
+      },
+       {
+        color: "Beige arena",
+        image:  CamisaInfantilBeige,
+        code: "#ebdcc8"
+      },
+       {
+        color: "Rosa polvo",
+        image:  CamisaInfantilRosa,
+        code: "#e6c7c6"
+      }
+    ],
+
+    rating: 5.0,
+    price: 49.99,
+    oldPrice: 64.99,
+    badge: "Nuevo",
+
+    sizes: ["28", "29", "30", "31", "32", "33"],
+
+    description:
+      "Mocasines infantiles de estilo clásico en tono marrón, pensados para completar conjuntos elegantes.",
+
+    stock: 10,
+    sku: "KID-BOY-SHO-001",
+    aosDelay: "300"
+  },
+  
+  {
+    id: 6,
+    title: "Pantalon minimalista",
+    category: "kids",
+    gender: "boys",
+
+    collection: "dulce-melodia",
+
+    // slug: "mocasines-marron",
+
+
+    variants: [
+      {
+        color: "Marfil",
+        image: PantalonMinimalMarfil,
+        code: "#f7f2ea"
+      },
+       {
+        color: "Beige arena",
+        image: PantalonMinimalBeige,
+        code: "#ebdcc8"
+      },
+       {
+        color: "Rosa polvo",
+        image: PantalonMinimalRosa,
+        code: "#e6c7c6"
+      }
+    ],
+
+    rating: 5.0,
+    price: 49.99,
+    oldPrice: 64.99,
+    badge: "Nuevo",
+
+    sizes: ["28", "29", "30", "31", "32", "33"],
+
+    description:
+      "Mocasines infantiles de estilo clásico en tono marrón, pensados para completar conjuntos elegantes.",
+
+    stock: 10,
+    sku: "KID-BOY-SHO-001",
+    aosDelay: "300"
+  },
+    {
+    id: 7,
+    title: "Zapaticos",
+    category: "kids",
+    gender: "boys",
+
+    collection: "dulce-melodia",
+
+    // slug: "mocasines-marron",
+
+
+    variants: [
+      {
+        color: "Marfil",
+        image:  ZapatitosMarfil,
+        code: "#f7f2ea"
+      },
+       {
+        color: "Beige arena",
+        image:  ZapatitosBeige,
+        code: "#ebdcc8"
+      },
+       {
+        color: "Rosa polvo",
+        image:  ZapatitosRosa,
+        code: "#e6c7c6"
+      }
+    ],
+
+    rating: 5.0,
+    price: 49.99,
+    oldPrice: 64.99,
+    badge: "Nuevo",
+
+    sizes: ["28", "29", "30", "31", "32", "33"],
+
+    description:
+      "Mocasines infantiles de estilo clásico en tono marrón, pensados para completar conjuntos elegantes.",
+
+    stock: 10,
+    sku: "KID-BOY-SHO-001",
+    aosDelay: "300"
+  }
 ]

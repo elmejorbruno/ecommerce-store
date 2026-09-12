@@ -35,7 +35,7 @@ const CategoryHero = ({  subtitle,
           </h1>
 
           <p
-            className="italic text-xl sm:text-2xl md:text-3xl mb-6 sm:mb-8 font-bold"
+            className="font-handwriting text-xl sm:text-6xl md:text-3xl mb-6 sm:mb-8 lg:text-5xl font-bold"
           
           >
             {slogan}
@@ -48,7 +48,7 @@ const CategoryHero = ({  subtitle,
             {description}
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+          <div className="flex py-3 flex-col sm:flex-row justify-center md:justify-start gap-4">
             <button
               className="px-6 sm:px-8 py-3 text-sm tracking-wide transition-all"
              
@@ -88,7 +88,7 @@ const CategoryHero = ({  subtitle,
       >
         <div
           className="max-w-7xl mx-auto flex flex-col md:flex-row justify-around text-center gap-4"
-          style={{ color: "var(--color-black)", opacity: 0.7 }}
+          // style={{ color: "var(--color-black)", opacity: 0.7 }}
         >
           <div>🚚 <strong>Envío gratis</strong> en pedidos superiores a $50</div>
           <div>💎 <strong>Calidad premium</strong> materiales seleccionados</div>

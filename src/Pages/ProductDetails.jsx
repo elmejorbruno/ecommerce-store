@@ -8,7 +8,7 @@ const ProductDetails = () => {
     
   
     const product = allDataProduct.find(
-        item => item.id === Number(id)
+        item => item.id === id
     )
     
     if (!product) {

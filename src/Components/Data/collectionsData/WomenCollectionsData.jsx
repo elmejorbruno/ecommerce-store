@@ -6,7 +6,7 @@ import ModeloDosPiezaCamisaMinifalda from "../../../assets/img/women/img-4.4.web
 
 export const dataWomenCollections = [
  {
-    id: 1,
+    id: "traje-de-oficina",
     title: "Traje de oficina completo",
     category: "women",
     slug: "executive-sets",
@@ -25,7 +25,7 @@ export const dataWomenCollections = [
   },
 
   {
-    id: 2,
+    id: "vestido-de-noche-satinado",
     title: "Vestido de noche satinado",
     category: "women",
     slug: "evening-dresses",
@@ -43,8 +43,8 @@ export const dataWomenCollections = [
       "Elegant dresses for evening events and special occasions.",
   },
    {
-    id: 3,
-    title: "Vestido de fiesta elegante",
+    id: "camisa-y-falda-ejecutivo",
+    title: "Camisa y falda ejecutivo",
     category: "women",
     slug: "evening-party-dresses",
     image: VestidoEleganteGris,
@@ -61,8 +61,8 @@ export const dataWomenCollections = [
       "Elegant dresses for evening events and special occasions.",
   },
    {
-    id: 4,
-    title: "camisa y falda ejecutivo",
+    id: "camisa-y-falda-ejecutivo",
+    title: "Camisa y falda ejecutivo",
     category: "women",
     slug: "traje-ejecutivo",
     image: TrajeElegante,
@@ -80,7 +80,7 @@ export const dataWomenCollections = [
   },
  
    {
-    id: 5,
+    id: "camisa-chaqueta-minifalda",
     title: "Camisa, chaqueta y minifalda informal",
     category: "women",
     slug: "falda-chaqueta-camisa",

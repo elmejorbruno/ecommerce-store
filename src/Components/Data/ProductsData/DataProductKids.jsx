@@ -11,7 +11,7 @@ import ZapatitosMarfil from '../../../assets/img/kids/shoes_ivory.png'
 
 export const dataProductKids = [
       {
-    id: 1,
+    id: "blazer-beige",
     title: "Blazer Beige",
     category: "kids",
     gender: "boys",
@@ -43,42 +43,10 @@ export const dataProductKids = [
     aosDelay: "0"
   },
 
-  {
-    id: 2,
-    title: "Camisa Ivory",
-    category: "kids",
-    gender: "boys",
 
-    collection: "classic-beige",
-
-    // slug: "camisa-ivory",
-
-
-    variants: [
-      {
-        color: "Ivory",
-        image: SoftTaupe ,
-        code: "#F3F0E8"
-      }
-    ],
-
-    rating: 5.0,
-    price: 34.99,
-    oldPrice: 44.99,
-    badge: "Nuevo",
-
-    sizes: ["4Y", "6Y", "8Y", "10Y", "12Y"],
-
-    description:
-      "Camisa infantil de manga larga en tono ivory, diseñada para combinar con conjuntos elegantes y ocasiones especiales.",
-
-    stock: 20,
-    sku: "KID-BOY-SHR-001",
-    aosDelay: "100"
-  },
 
   {
-    id: 3,
+    id: "pantalon-beige",
     title: "Pantalón Beige",
     category: "kids",
     gender: "boys",
@@ -112,7 +80,7 @@ export const dataProductKids = [
   },
 
   {
-    id: 4,
+    id: "mocasines-marron",
     title: "Mocasines Marrón",
     category: "kids",
     gender: "boys",
@@ -145,7 +113,7 @@ export const dataProductKids = [
     aosDelay: "300"
   },
   {
-    id: 5,
+    id: "camisa-minimalista-infantil",
     title: "Camisa minimalista",
     category: "kids",
     gender: "boys",
@@ -189,7 +157,7 @@ export const dataProductKids = [
   },
   
   {
-    id: 6,
+    id: "pantalon-minimalista-infantil",
     title: "Pantalon minimalista",
     category: "kids",
     gender: "boys",
@@ -232,7 +200,7 @@ export const dataProductKids = [
     aosDelay: "300"
   },
     {
-    id: 7,
+    id: "zapatitos",
     title: "Zapaticos",
     category: "kids",
     gender: "boys",

@@ -7,8 +7,8 @@ import ModeloGirdMinimal from "../../../assets/img/kids/minimal-infantil-ivory-n
 
 export const dataKidsCollections = [
    {
-    id: 1,
-    title: "Minimal infantil natural",
+    id: "conjunto infantil",
+    title: "Conjunto infantil natural",
     category: "kids",
     slug: "dulce-melodia",
     image: ModeloGirdMinimal,
@@ -23,8 +23,8 @@ export const dataKidsCollections = [
   },
    
   {
-    id: 2,
-    title: "Classic Beige",
+    id: "traje-clásico-beige",
+    title: "Traje Clásico Beige",
     category: "kids",
     slug: "classic-beige",
     image: ModkidsClassicBeige,
@@ -38,8 +38,8 @@ export const dataKidsCollections = [
     aosDelay: "0"
   },
  {
-    id: 3,
-    title: "Vestido Ivory",
+    id: "vestido-ivory",
+    title: "Vestido marfil",
     category: "kids",
     slug: "ivory-dress",
     image: ModeloGirdIvoryDress,
@@ -53,7 +53,7 @@ export const dataKidsCollections = [
     aosDelay: "0"
   },
   {
-    id: 4,
+    id: "soft-taupe",
     title: "Soft Taupe",
     category: "kids",
     slug: "soft-taupe",
@@ -69,8 +69,8 @@ export const dataKidsCollections = [
   },
 
   {
-    id: 5,
-    title: "Navy Classic",
+    id: "traje-colect",
+    title: "traje-colect",
     category: "kids",
     slug: "navy-classic",
     image: ModeloBoysNavyClassic,

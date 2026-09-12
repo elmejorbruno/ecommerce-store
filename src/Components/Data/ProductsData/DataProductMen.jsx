@@ -19,7 +19,7 @@
 
 export const dataProductMen = [
    {
-      id: 1,
+      id: "camisa-manga-larga",
       title: "Camisa manga larga",
       variants:[
          {  color: "Negro",
@@ -51,7 +51,7 @@ export const dataProductMen = [
           },
 
     {
-      id: 2,
+      id: "camisa-y-pantalon-gris",
       title: "Camisa y pantalón gris",
       variants:[
          {  color: "Gris",
@@ -81,7 +81,7 @@ export const dataProductMen = [
           },
    
             {
-      id: 3,
+      id: "chaqueta-minimalista",
       title: "Chaqueta minimalista",
     
       category: "men",
@@ -119,7 +119,7 @@ export const dataProductMen = [
               aosDelay: "0"
           },
             {
-      id: 4,
+      id: "camisa-minimalista",
       title: "Camisa minimalista",
      
       category: "men",
@@ -157,7 +157,7 @@ export const dataProductMen = [
               aosDelay: "0"
           },
             {
-      id: 5,
+      id: "pantalon-minimalista",
       title: "Pantalon minimalista",
      
       category: "men",
@@ -195,8 +195,8 @@ export const dataProductMen = [
               aosDelay: "0"
           },
           {
-      id: 6,
-      title: "Camisa",
+      id: "camisa-imprescindible",
+      title: "Camisa imprescindible",
      
       category: "men",
       collection: "imprescindible",
@@ -233,8 +233,8 @@ export const dataProductMen = [
               aosDelay: "0"
           },
            {
-      id: 7,
-      title: "Pantalo clásico",
+      id: "pantalon-clasico",
+      title: "Pantalon clásico",
      
       category: "men",
       collection: "imprescindible",

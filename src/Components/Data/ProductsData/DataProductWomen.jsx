@@ -24,7 +24,7 @@ export const dataProductWomen = [
    
 
       {
-        id: 1,
+        id: "blusa-satinada",
         title: "Blusa Satinada",
         variants: [
             {
@@ -66,7 +66,7 @@ export const dataProductWomen = [
        
 
         {
-        id: 2,
+        id: "pantalon-alto",
         title: "Pantalon Alto",
          variants: [
             {
@@ -104,7 +104,7 @@ export const dataProductWomen = [
 
        
         {
-        id: 3,
+        id: "blazer-elegante",
         title: "Blazer Elegante",
          variants: [
             {
@@ -141,7 +141,7 @@ export const dataProductWomen = [
         aosDelay: "0"
       },  
         {
-        id: 4,
+        id: "vestido-de-fiesta-elegante",
         title: "Vestido de fiesta elegante",
          variants: [
            
@@ -174,7 +174,7 @@ export const dataProductWomen = [
         aosDelay: "0"
       },    
      {
-        id: 5,
+        id: "vestido-de-noche",
         title: "Vestido de noche",
          variants: [
            
@@ -212,7 +212,7 @@ export const dataProductWomen = [
         aosDelay: "0"
       },    
         {
-        id: 6,
+        id: "camisa-ejecutiva",
         title: "Camisa ejecutiva",
          variants: [
            
@@ -245,7 +245,7 @@ export const dataProductWomen = [
       }, 
 
        {
-        id: 7,
+        id: "falda-ejecutiva",
         title: "Falda ejecutiva",
          variants: [
            

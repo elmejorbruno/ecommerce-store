@@ -6,7 +6,7 @@ import ModeloCamisapantalonGris from "../../../assets/img/men/modelo-camisa-gris
 export const dataMenCollections = [
 
    {
-    id: 1,
+    id: "camisa-manga-larga",
     title: "Camisa manga larga",
     category: "men",
     slug: "camisa-manga-larga",
@@ -25,7 +25,7 @@ export const dataMenCollections = [
   },
 
   {
-    id: 2,
+    id: "chaqueta-cuello-alto-y-pantalon-sastre",
     title: "Chaqueta, cuello alto y pantalón sastre",
     category: "men",
     slug: "esencia-minimal",
@@ -43,7 +43,7 @@ export const dataMenCollections = [
       "Elegant dresses for evening events and special occasions.",
   },
       {
-    id: 3,
+    id: "camisa-y-pantalon-gris",
     title: "Camisa y pantalón gris",
     category: "men",
     slug: "clasico",
@@ -61,7 +61,7 @@ export const dataMenCollections = [
       "Elegant dresses for evening events and special occasions.",
   },
     {
-    id: 4,
+    id: "camisa-y-pantalon",
     title: "Camisa y pantalón imprescindible",
     category: "men",
     slug: "imprescindible",

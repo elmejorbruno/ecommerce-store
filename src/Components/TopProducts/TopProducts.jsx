@@ -21,6 +21,7 @@ const TopProducts = () => {
             sm:grid-cols-3 md:grid-cols-3 5 gap-20 md:gap-5 place-items-center">
             {bestProductsData.map((product) => (
                     <div 
+                    key={product.id}
                     data-aos="zoom-in" 
                     className="rounded-2xl bg-black 
                     dark:bg-gray-800 hover:bg-black/90 

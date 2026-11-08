@@ -1,4 +1,4 @@
-import ImagenHero from '../../assets/img/women/modelo-hero-women.webp'
+import ImagenWomen from '../../assets/img/women/modelo-hero-women.webp'
 import ImagenMen from '../../assets/img/men/modelo-hero-men.png'
 import ImagenNinoNina from '../../assets/img/kids/modelos-ninos-hero2.png'
 
@@ -11,7 +11,7 @@ export const heroData = {
         slogan: "Elegancia y Estilo para Cada Ocasión",
         descripcion: 
             "Elegancia moderna con piezas diseñadas para realzar tu esencia en cada ocasión.",
-        image: ImagenHero,
+        image: ImagenWomen,
         primaryButton: "VER COLECCIÓN",
             secondaryButton: "NUEVAS TENDENCIAS",
             alt: "Modelo con vestido elegante blanco"

@@ -28,14 +28,14 @@ const CategoryHero = ({  subtitle,
           </h4>
 
           <h1
-            className="text-4xl sm:text-5xl md:text-7xl font-light mb-3 sm:mb-4 font-bold "
+            className="text-4xl sm:text-5xl md:text-7xl font-medium mb-3 sm:mb-4 "
           
           >
            {title}
           </h1>
 
           <p
-            className="font-handwriting text-xl sm:text-6xl md:text-3xl mb-6 sm:mb-8 lg:text-5xl font-bold"
+            className="font-handwriting text-xl sm:text-3xl md:text-4xl mb-6 sm:mb-8 lg:text-5xl font-medium"
           
           >
             {slogan}
@@ -57,7 +57,7 @@ const CategoryHero = ({  subtitle,
             </button>
 
             <button
-              className="px-6 sm:px-8 py-3 text-sm tracking-wide border transition-all"
+              className="bg-gradient-to-r from-black to-button hover:scale-105 px-6 sm:px-8 py-3 text-white text-sm tracking-wide border transition-all"
              
             >
               {secondaryButton}

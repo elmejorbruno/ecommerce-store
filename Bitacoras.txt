@@ -1,0 +1,62 @@
+# Bitácora — Elegance Store
+
+**Fecha:** 24 de octubre de 2026
+
+## Revisión documental
+
+### Confirmado documentalmente
+- Dirección visual editorial premium para el Hero.
+- Estructura propuesta de cuatro slides: Inicio, Damas, Caballeros y Niños.
+- Convención de datos `pagina` y `link`.
+- Rutas previstas `/`, `/women`, `/men` y `/kids`.
+- Problema de cierre prematuro del Mega Menu identificado.
+
+### Pendiente de verificar en el repositorio
+- Estado real de Hero, Breadcrumb y ProductGrid.
+- Estado de ProductCard y ProductDetails.
+- Implementación de HeroSlider y datos del slider.
+- Existencia y funcionamiento de las rutas.
+- Definición de `--mega-menu-top`.
+- Estado de las páginas Women, Men y Kids.
+- Existencia de Categories y TopProducts.
+- Integración de las imágenes definitivas.
+
+### En desarrollo
+- Corrección del Mega Menu.
+- Integración de los CTA del slider.
+- Selección e integración de recursos visuales.
+
+### Pendiente
+- Completar las páginas de categoría y los componentes pendientes.
+- Revisar responsive, accesibilidad, rendimiento y SEO.
+- Ejecutar la compilación y las pruebas del frontend.
+- Actualizar el documento maestro con el estado real comprobado.
+
+### Próximo paso
+Inspeccionar el código actual antes de modificar componentes. Corregir primero el Mega Menu y después verificar la integración del Hero y sus rutas.
+
+**Nota de estado:** esta revisión se basa en la documentación disponible. No se ha inspeccionado ni ejecutado el repositorio actual; por tanto, no se certifica todavía ninguna corrección técnica.
+
+# Bitácora — Elegance Store
+**Fecha:** 24 de octubre de 2026
+
+## Terminado en planificación
+- Definida la dirección visual del hero institucional: boutique premium con accesorios de moda.
+- Establecida la organización propuesta del slider: Inicio, Damas, Caballeros y Niños.
+- Definida la convención de datos: `pagina` para el nombre visible y `link` para la ruta.
+- Preparado el prompt para generar la imagen institucional sin texto incrustado.
+
+## En desarrollo
+- Corrección del cierre prematuro del Mega Menu tras reducir el padding del Navbar.
+- Integración de los CTA del slider con React Router.
+
+## Pendiente
+- Generar e integrar la imagen institucional de accesorios.
+- Integrar y optimizar la imagen de Niños.
+- Verificar las rutas `/women`, `/men` y `/kids`.
+- Probar el Mega Menu y el slider en diferentes tamaños de pantalla.
+
+## Próximo paso
+Adaptar el `HeroSlider.jsx` y `SliderData.js` actuales, y después probar el resultado en el proyecto real.
+
+**Nota:** las soluciones de código propuestas aún no están verificadas mediante ejecución del proyecto.
